@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0; padding: 0;border:0;list-style:none;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{ display: block; }
+address,cite,dfn,em,var,i{font-style:normal}
+input,textarea{outline: none;resize: none;}
+
+a{color: #666;text-decoration:none; outline: none;}
+a:hover{color: #239ce9;text-decoration:none;}
+a:focus{text-decoration:none; outline: none;}
+
+img{vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+
+.clear{*zoom:1}
+.clear:after{*zoom:1;display:block;visibility:hidden;clear:both;height:0;content:'\20';}
+
+html,body{width: 100%;min-width: 1200px; height: 100%; overflow: hidden;}
+body{ font-family: "Microsoft YaHei",Arial,sans-serif; font-size: 14px; color:#666; overflow-x: hidden;}
+
+.full_height {
+	height: 100%;
+	min-height: 850px;
+}
+.full_height .item{height: 100%;background: #e9eaee;}
+.pager{
+	position: absolute;
+	bottom: 3%;
+	text-align: center;
+	width: 100%;
+}
+#navbar{position: relative;width: 160px; height: 2px; margin: 0 auto;}
+#dash {
+	height: 2px;
+	width: 160px;
+	background:#ddd;	
+}
+#progress {
+	margin: 0 auto;
+	height: 2px;
+	width: 40px;
+	left: 0; top: 0;
+	background: #f92626;
+	position: absolute;
+}
+#navbtns {
+	width: 240px; height:20px;
+	position: relative;  top: -15px;
+	z-index: 1;  margin: 0 auto; 
+}
+#navbtns a{width: 40px;height: 20px;line-height: 20px; display: inline-block; text-indent: -99em; overflow: hidden; position: relative; top: -5px;}
+#navbtns .page-num{ color: #f92626; }
+
+.carousel {
+	position:relative
+}
+.carousel-inner {
+	position:relative;
+	width:100%;
+	overflow:hidden
+}
+.carousel-inner>.item {
+	position:relative;
+	display:none;
+-webkit-transition:.6s ease-in-out left;
+transition:.6s ease-in-out left
+}
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	display:block;
+	height:auto;
+	max-width:100%;
+	line-height:1
+}
+.carousel-inner>.active, .carousel-inner>.next, .carousel-inner>.prev {
+	display:block
+}
+.carousel-inner>.active {
+	left:0
+}
+.carousel-inner>.next, .carousel-inner>.prev {
+	position:absolute;
+	top:0;
+	width:100%
+}
+.carousel-inner>.next {
+	left:100%
+}
+.carousel-inner>.prev {
+	left:-100%
+}
+.carousel-inner>.next.left, .carousel-inner>.prev.right {
+	left:0
+}
+.carousel-inner>.active.left {
+	left:-100%
+}
+.carousel-inner>.active.right {
+	left:100%
+}
+.carousel-indicators {
+	position:absolute;
+	left:20px; top: 40%;
+	z-index:15;
+	width:50px;
+	text-align:center;
+	list-style:none
+}
+.carousel-indicators li {	
+	width:30px;
+	height:2px; margin: 15px 0;
+	text-indent:-999px;
+	cursor:pointer; background: #fff; transition: background .3s;
+}
+.carousel-indicators .active {
+	width:40px;
+	height:2px;
+	background:#f92626
+}
