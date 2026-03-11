@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<title>首页</title>
+<link href="css/style.css" type="text/css" rel="stylesheet"/>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/index.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="carousel_container" class="carousel slide full_height">
+	<ol class="carousel-indicators">
+		<li data-target="#carousel_container" data-slide-to="0" class="active"></li>
+		<li data-target="#carousel_container" data-slide-to="1"></li>
+		<li data-target="#carousel_container" data-slide-to="2"></li>
+		<li data-target="#carousel_container" data-slide-to="3"></li>
+	</ol>   
+	<div class="carousel-inner full_height">
+		<div id="vision_home" class="item active" tag="home" progress="40">				
+			<div id="splash">
+				<div class="splash-container"><img src="images/1.jpg" alt="" /></div>
+			</div>					
+		</div>
+		<div id="vision_intro" class="item" tag="intro" progress="80">				
+			<div id="splash" class="ani_step_1">
+				<div class="splash-container"><img src="images/2.jpg" alt="" /> </div>
+			</div>					
+		</div>
+		<div id="vision_gift" class="item" tag="gift" progress="120">					
+			<div id="splash" class="ani_step_2">							
+				<div class="splash-container"><img src="images/3.jpg" alt="" /> </div>
+			</div>					
+		</div>
+		<div id="vision_feedback" class="item" tag="feedback" progress="160">					
+			<div id="splash" class="ani_step_3">							
+				<div class="splash-container"><img src="images/4.jpg" alt="" /> </div>
+			</div>					
+		</div>				
+	</div>
+</div>
+
+<div class="pager">
+	<div id="navbar">
+		<div id="dash"></div>
+		<div id="progress"></div>				
+	</div>
+	<div id="navbtns">
+		<span class="page-num">0<span id="ntxt">1</span></span>
+		<a href="javascript:switchvision(0)">1</a>
+		<a href="javascript:switchvision(1)">2</a>
+		<a href="javascript:switchvision(2)">3</a>
+		<a href="javascript:switchvision(3)">4</a>
+		<span class="page-total">04</span>
+	</div>
+</div>
+</body>
+</html>
